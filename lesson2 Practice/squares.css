@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
   }
   
 .container {
@@ -9,11 +8,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
   }
   
   .square {
-    width: 135px;
+    width: auto;
     display: inline-flex;
     justify-content: center;
     margin: 10px;
@@ -23,31 +22,38 @@ body {
   }
   
   .header-box {
+    width: auto; 
     border: 1px solid red;
+    flex-wrap: wrap;
     padding: 10px;
-    margin-bottom: 0;
+   margin-bottom: 0; 
     margin-left: 10px;
     margin-right: 10px;
   }
   
   .content-box {
+    width: auto;
     border: 1px solid blue;
+
+    flex-wrap: wrap;
     padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   h2, p {
     margin: 0;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 550px) {
     .container {
       flex-direction: column;
     }
   
     .square {
-      width: 135px;
-      
+      width: auto;
+      flex-wrap: wrap;
+      display: flex;
+      margin: auto;
     }
   }
