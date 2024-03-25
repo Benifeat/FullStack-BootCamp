@@ -17,6 +17,9 @@ were asked to complete a challenge from frontendmentor in which I had to make a 
 were asked to complete a challenge from frontendmentor in which I had to make a summry tab,
 with with a button and design + practice Flex/grid.
 
+### homepractice1 
+where asked to make a webpage window featuring a school schedule using grid.
+
 
 # Project1-(HW1) Store Website
 As part of class homework, I built this Templates Shop Website.
