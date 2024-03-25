@@ -60,7 +60,6 @@ Key Features:
 - Online store page with product previews and links to individual product pages.
 
 Missing Features:
-- Individual product pages (e.g., StarsTemp.html, SunnySideUp.html, Structures.html, etc.) will be added in future versions.
 - The CTA section currently lacks an image placeholder.
 - Social media links in the footer are placeholders and need to be updated with actual URLs.
 - The sign-in/sign-up modal lacks integration with an authentication system.
@@ -82,8 +81,6 @@ Updates:
 - Store.css:
   - Added styles for the new product pages, including background images and hover effects.
   - Improved responsive design for smaller screens.
-- Store.html:
-  - Added links to the new product pages (furnature.html, gaming.html, and Music.html).
 
 Planned Updates:
 - Refine the design and layout of the product pages.
