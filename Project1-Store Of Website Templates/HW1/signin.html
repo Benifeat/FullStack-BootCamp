@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn/SignUp</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/benis.png">
+    <!-- Include the reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+   
+    <header>
+        <!-- Navigation Bar (Nuffbar) -->
+            <nav>
+                <div class="nav-container">
+                    <a href="./HW1.html" class="logo"></a>
+
+                    <ul class="nav-links">
+                        <li><a href="./Store.html">Online Store</a></li>
+                        <li><a href="./Help.html">Help center</a></li>
+                        <li><a href="./Help.html">Contact Us</a></li>
+                        <li><a href="./signin.html">Log In</a></li>
+                    </ul>
+                </div>
+                <div class="discount-banner">
+                    <p>Get 50% off website plans + 4 free templates!</p>
+                </div>
+            </nav> <!-- Add your navigation links here -->
+    </header>
+  <!-- popcintainer -->
+  <div class="popup-container" id="popupContainer">
+    <div class="popup-content">
+      <p>Here is your ad content...</p>
+      <span id="countdown">5</span> seconds remaining
+    </div>
+    <button id="cancelButton">Cancel</button>
+  </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>A successful business needs a professional website</h1>
+                <p>Building a successful business always starts with building a professional website. Jimdo is here to help with everything you need for a successful business, no matter your industry or website needs. Build your dreams.</p>
+                <button>Start for Free</button>
+            </div>
+            <div class="hero-image">
+                <img src="" alt="Hero Image">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="biggergrid">
+            <div class="feature-item">
+                <div class="featurebox">
+                <h3 id="feature-font1">Business Websites</h3>
+                <p id="feature-font2">Everything you need to create a professional homepage and web presence for your business, no coding skills required. Beautiful, automated business templates, and more.</p>
+                <a id="feature-font3" href="#">Business Website Demo</a>
+            </div>
+                <div class="feature-item-img"></div>
+            </div>
+
+            <div class="feature-item">
+                <div class="featurebox2">
+                <h3 id="feature-font1">Business Websites</h3>
+                <p id="feature-font2">Everything you need to create a professional homepage and web presence for your business, no coding skills required. Beautiful, automated business templates, and more.</p>
+                <a id="feature-font3" href="#">Business Website Demo</a>
+            </div>
+            </div>
+            </div>
+            <!-- Add other feature items for Online Shop and Portfolio Website -->
+        </section>
+        
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Your website without all the bells and whistles but with everything you need</h2>
+                <p>Build your professional website with the power of the Jimdo Artificial Intelligence. It helps you create your business and website, and intelligent & speech it as and knows exactly what you need to tell accomplish.</p>
+                <button>Learn more</button>
+                <button>Get started</button>
+            </div>
+            <div class="cta-image">
+                <img src="" alt="CTA Image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beni's Templates. All rights reserved.</p>
+            </div>
+        </footer>
+    </footer>
+      
+
+
+
+    <!-- Sign In/Sign Up Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span  class="close">
+            <a href="./HW1.html"> &times;</a></span>
+        <h2>Sign In</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="captcha">
+                <div class="captcha-content">
+                  <img class="captcha-logo" src="https://as1.ftcdn.net/v2/jpg/03/74/83/28/1000_F_374832817_o1XM5iP8cKloqbNCMAQZjC2wijiNxcec.jpg" alt="Logo">
+                  <div class="captcha-text">Click to Verify</div>
+                  <input type="checkbox" id="terms" name="terms">
+                  <label for="terms">I agree to the terms and conditions</label>
+                </div>
+              </div>
+
+            <div class="social-login" > 
+                   <a href="https://www.google.com/" target="_blank" style="color: black;text-decoration: none;"> 
+                <button class="social-btn google-btn" id="googleid"  >
+                    <img src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png" alt="Google Icon" >
+                
+                    Sign in with Google</a>
+                </button>
+            </div>
+            <div class="social-login">  
+                <a href="https://www.facebook.com/" target="_blank" style="color: black;text-decoration: none;">   
+                <button class="social-btn facebook-btn"  >
+                    <img src="https://brandslogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1-400x400.png" alt="Facebook Icon">
+                    Sign in with Facebook </a>
+                </button>
+            </div>
+
+            <button type="submit" class="sign-in-btn">Sign In</button>
+            
+        </form>
+    </div>
+</div>
+
+<!-- sign in -->
+
+
+</body>
+</html>
