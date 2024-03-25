@@ -13,6 +13,11 @@ were asked to make 4 ticket like windows with windows in them and to operate the
 ### lesson3 
 were asked to complete a challenge from frontendmentor in which I had to make a website ticket of a product in this case a perfume.
 
+### lesson4 
+were asked to complete a challenge from frontendmentor in which I had to make a summry tab,
+with with a button and design + practice Flex/grid.
+
+
 # Project1-(HW1) Store Website
 As part of class homework, I built this Templates Shop Website.
 
