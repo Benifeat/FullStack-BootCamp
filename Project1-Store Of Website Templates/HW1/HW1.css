@@ -71,7 +71,6 @@ nav {
     padding: 10px;
     
     #text{   
-        transform:translateX(100%);
         animation: scroll-left 13s linear infinite;
         color: #fff;
     }
