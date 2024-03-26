@@ -40,6 +40,8 @@ nav {
     background-size: 104px 65px;
     padding: 35px 52px;
     background-image: url("./images/benis.png");
+        -webkit-animation: fade-in 1.69s ease-in  both;
+                animation: fade-in 1.69s ease-in  both;
 }
 
 .nav-links {
@@ -65,9 +67,16 @@ nav {
 
 .discount-banner {
     background-color: #f44336;
-    color: #fff;
     text-align: center;
     padding: 10px;
+    
+    #text{   
+        transform:translateX(100%);
+        animation: scroll-left 13s linear infinite;
+        color: #fff;
+    }
+
+    
 }
 
 /* Hero Section */
@@ -260,6 +269,7 @@ footer {
 
 
 
+
 .popup-container {
         position: fixed;
         bottom: 20px;
@@ -271,6 +281,9 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         max-width: 300px;
         z-index: 9999;
+            -webkit-animation: jello-horizontal 0.9s 10s 3 both;
+                    animation: jello-horizontal 0.9s 10s 3 both;
+            
 
   }
   
@@ -283,7 +296,7 @@ footer {
   
   #countdown {
     font-weight: bold;
-    animation: countdown 1s linear infinite;
+    animation: countdown 0.5s linear infinite;
   }
   
   @keyframes countdown {
@@ -520,31 +533,92 @@ footer {
     }
 }
 
-/* Tablets */
-/* @media (min-width: 768px) and (max-width: 1920px) {
-    .hero {
-        padding: 80px 40px;
-    }
 
-    .features {
-        padding: 80px 40px;
+ @-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
     }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
 
-    .biggergrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .feature-item {
-        right: 0;
-    }
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
 
-    .featurebox,
-    .featurebox2 {
-        left: 20px;
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
     }
-
-    .feature-item-img {
-        left: 50%;
-        transform: translateX(-50%);
+    100% {
+      opacity: 1;
     }
-} */
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
