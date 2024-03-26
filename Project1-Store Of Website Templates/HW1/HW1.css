@@ -67,12 +67,14 @@ nav {
 
 .discount-banner {
     background-color: #f44336;
-    text-align: center;
+    text-align: end;
     padding: 10px;
     
     #text{   
+         transform: translateX(150%);
         animation: scroll-left 13s linear infinite;
         color: #fff;
+        width: 60%;
     }
 
     
