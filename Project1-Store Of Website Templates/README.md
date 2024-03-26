@@ -78,6 +78,9 @@ Note: This update log reflects the initial release version (0.1) of the website.
 Version 0.2
 
 Updates:
+-Store.html
+  -Added popcontainer animation.
+  -added discount bar animation.
 - Store.css:
   - Added styles for the new product pages, including background images and hover effects.
   - Improved responsive design for smaller screens.
