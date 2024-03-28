@@ -74,7 +74,7 @@ nav {
         transform: translateX(100%);
         animation: scroll-left 13s linear infinite;
         color: #fff;
-        width: 75%;
+        width: 33%;
     }
 
     
@@ -599,7 +599,7 @@ footer {
 
 @keyframes scroll-left {
  0%   {
- transform: translateX(100%); 		
+ transform: translateX(300%); 		
  }
  100% {
  transform: translateX(-100%); 
