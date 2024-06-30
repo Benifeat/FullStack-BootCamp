@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Todo.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <h1 class="header">to do list</h1>
+    <div class="box">
+        <div class="Todoadj">
+            <label for="TodoList">Enter Task:</label>
+            <div>
+                <p>
+                    <textarea id="TodoList" rows="4" placeholder="Enter your task here..."></textarea>
+            </p>
+            </div>
+            <button id="submitButton">Submit</button>
+            <button id="deleteButton">Delete</button>
+        </div>
+        <div id="taskContainer">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="Todo.js"></script>
+</body>
+</html>
