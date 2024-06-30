@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Num Calculator</title>
+    <style>
+        input, button {
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+        #result {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <br>
+    <button onclick="performOperation('+')">+</button>
+    <button onclick="performOperation('-')">-</button>
+    <button onclick="performOperation('*')">*</button>
+    <button onclick="performOperation('/')">÷</button>
+    <button onclick="performOperation('%')">%</button>
+    <button onclick="performOperation('^')">^</button>
+    <h3 id="result"></h3>
+
+    <script>
+        let num1, num2;
+
+        function performOperation(operator) {
+            num1 = parseFloat(document.getElementById('num1').value);
+            num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers';
+                return;
+            }
+
+            let result;
+            switch (operator) {
+                case '+':
+                    result = add(num1, num2);
+                    break;
+                case '-':
+                    result = subtract(num1, num2);
+                    break;
+                case '*':
+                    result = multiply(num1, num2);
+                    break;
+                case '/':
+                    result = divide(num1, num2);
+                    break;
+                case '%':
+                    result = divideIntegers(num1, num2);
+                    break;
+                case '^':
+                    result = power(num1, num2);
+                    break;
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            return b !== 0 ? a / b : 'Cannot divide by zero';
+        }
+
+        function divideIntegers(a, b) {
+            if (b === 0) {
+                return 'Cannot divide by zero';
+            }
+            const wholePart = Math.floor(a / b);
+            const remainder = a % b;
+            return `Whole part: ${wholePart}, Remainder: ${remainder}`;
+        }
+
+        function power(a, b) {
+            return Math.pow(a, b);
+        }
+    </script>
+</body>
+</html>

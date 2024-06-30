@@ -1,0 +1,27 @@
+1. DOM manipulation. Continue with DOM1.html.
+   a) In HTML create turquoise div and red div that will be ajacent 
+      to the right side of the turquoise DIV. [v]
+
+   b) Create function showFavouriteFood() - it adds the text 
+      "My favourite food is " to the turquoiseDiv, and the text "pizza"
+      to the redDiv. Add event listener for 'mouseover' event for the
+      turquoiseDiv that will run this function. Add event listener like this
+      to the redDiv too. [v]
+
+   c) Create function toggleWidth() that will toggle between the width of 
+       300px and 200px for redDiv. Add event listener to the yellowBtn
+       that on "click" will run this function (it is a new listener!) [v]
+
+   d) Invent some change of one of the buttons while hovering over them
+       ('mouseover' event, and may be 'mouseout' too). Create appropriate 
+       callback function and event listener. [v]
+
+
+2. HAMBURGER
+
+a) add input for hobbie and input for eyeColor [v]
+   
+b) add event listener for the event 'change' for the 'hobbie' input
+   and event listener for the event 'input' for the eyeColor input [v]
+
+c) change function showDetails to show the new details too [v]

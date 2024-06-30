@@ -1,0 +1,140 @@
+0. Projects
+   00-portfolio - get some ideas, what do you want 
+   00-tic-tac-toe - 30.04.2024
+   01-is-it-a-prime-number - 30.04.2024
+   02-css-explanator - 30.04.2024
+   03-questionnaire - 8.05.2024
+
+   Optional Projects:
+   Canvas "Breakout Game"
+
+1. Calculate age. Write function that gets a birth year 
+    of a person, birth month and birth day,
+    gets the current date by the next statements:
+
+        var currDate = new Date();
+        var currYear = currDate.getFullYear();
+        var currMonth = currDate.getMonth();
+        var currDay = currDate.getDate();
+
+   and returns the age of the person. Pay attention that getMonth() 
+   returns month number (0 - January, 1 - February, 2 - March, etc.),
+   so you may make month input by number too or use some other way.
+
+2. Ternary operator inside ternary operator.
+
+   Example. I'd like to predict the future job of the person and 
+            ask him for a color.
+
+   let futureJob = color === 'red' ? 'firefighter' : 
+                   color === 'blue' ? 'policeman' : 'web designer';
+
+   a) Ask user to enter a number. Your output should be: "x < 70" 
+      or "x > 210" or "x is between 70 and 210".
+
+      CHALLENGE: With more ternary operators inside. Check if 
+                 there is any input. Check if the input is numeric.
+   
+   b) Ask the user to enter his name (one variable) 
+      and family name (another variable) and say 
+      that you're happy to see him if his name is John Smith, 
+      Jane Smith or Jack Daniels, otherwise tell him "go away".
+
+      Check that the user enters not empty string and not null 
+      (when clicking on "Cancel")
+
+      (Both, validity check and the content check give you 
+      ternary operator inside ternary operator)
+
+3. Tails and Heads. 
+   Mission from the file tails-and-heads-mission.html 
+
+4. For fun and glory. Flex-froggy
+   https://flexboxfroggy.com
+
+5. forEach training 
+
+   const foods = ['pizza','falafel','paSTa','sandwich','saLAd','hummus','soup'];
+   const drinks = ['beer','water','coFFEe','tee','milk','juICe','cola'];
+   const nums1 = [4, 5, 6, 1, 2, 2, 8]
+   const nums2 = [1, 3, 7, 0, 2, 5, 3]
+
+   a) Use forEach(), go over the array "drinks" and concatenate all it's elements into one string,
+      like this (with a new line and a number): '1. beer
+                  2. water
+                  3. coffee
+                   ....'
+
+      CHALLENGE: use reduce() for this
+
+   b) Create function, avgOfArr(), that gets an array 
+       of numbers, calculates the average of each second number
+       (check the index for being even)
+       (using forEach()) and rounds it to 2 digits after a dot.
+
+       CHALLENG: use reduce() for this
+
+       HINT: To calculate an average you should divide the sum of numbers
+       by their amount - you could divide each number inside the loop,
+       while adding it, or divide the whole some after the loop ends.
+
+   c) Go over "foods". If the index is odd, show only 3 first characters of the food, otherwise - the whole food
+
+   d) Go over "foods" and "anti-capitalize" all the foods (2 first letters -lower and other letters -upper).
+      Now the array "foods"  should look like: ['piZZA','paSTA','faLAFEL', ...]
+
+   e) Go over "foods" with map() and create new array "order" (הזמנה),
+      that will contain the name of food and how many from the array 
+      nums1 (you the index to find the appropriate number).
+      The new array should look like:
+      ['4 pizza', '5 falafel', '6 pasta', '1 sandwich' ... ]
+
+   f) Go over "drinks" with filter() and create new array "summerOrder",
+      it should contain amount (from nums1) of food + amount(from nums2)
+      of drink but without the pairs that contain hot drinks (no tea
+      or coffee).
+      The new array should look like:
+
+      ['4 pizza and 1 beer', '5 falafel and 3 water', '2 salad and NO milk' ...]
+
+   g) Go over nums2 with forEach() and change it's numbers:
+      if the number is on an even place multiply it by 10,
+      if it is not, add to it the appropriate number from nums1.
+      Ternary operator!!!
+
+6. Continue with timers.js + font awesome.
+
+   Add a circle div (streetlight) with a standing person inside
+   and 3 buttons: "Reset", "Go", "Maintanence".
+
+   Prepare in CSS classes '.red','.yellow','.green'.
+
+   For all the functions use classList interface.
+
+   Button "Reset" should make the "streetlight" red
+   and show standing person immediately.
+
+   Button "Go!" should right in the secondDiv: "The button was 
+   pressed, wait!" immediately, then, after some short time,
+   to make the "streetlight" green and put there a going person,
+   and after some longer time to make it red with standing person again.
+
+   Button "Maintanence" should stop the action of "Go!" 
+   at any stage and convert the color to yellow and the icon to 
+   something appropriate.
+
+7. Number systems.
+   There are the examples of using the algorithm at
+   from-binary-to-decimal.jpeg and at 
+   from-decimal-to-binary.jpeg.
+   
+   To submit, you could just show the process on the paper
+   and make a photo (or, if you prefer, to write it on an HTML page).
+
+   a) Convert 110111 from binary to decimal
+   b) Convert 1011001000 from binary to decimal
+
+   c) Convert 302 from decimal to binary
+   d) Convert 7821 from decimal to binary
+   
+   

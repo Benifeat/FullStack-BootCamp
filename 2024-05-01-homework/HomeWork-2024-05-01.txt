@@ -1,0 +1,51 @@
+0. Projects
+   00-portfolio - get some ideas, what do you want 
+   00-tic-tac-toe - 30.04.2024
+   01-is-it-a-prime-number - 30.04.2024
+   02-css-explanator - 30.04.2024
+
+   Optional Projects:
+   Canvas "Breakout Game"
+
+1. Two-Number Calculator. 
+   There is two-num-calc.html for a start.
+    There are 2 inputs (for two numbers) and the buttons with the
+    signs.
+
+    The inputs should change the 
+    values of the two numbers "oninput".
+    And the buttons should perform the calculations
+    "onclick", if there are both numbers which are OK.  
+   
+   Show in some "DIV" the result of the appropriate calculation.
+   The sign should be one of: +, -, *, /, 
+   % (should show the whole part and the remainder), ^ (power).
+   Create functions add(), subtract(), multiply(), divide(), 
+   divideIntegers(), power().
+   For the "onclick" attributes use one general function 
+   with "switch". 
+   In each case call the appropriate function.
+    
+
+2. Complete check-triangle.js
+  (and check-triangle.html if needed)
+
+  a) Addition to the function "checkTotal()":
+        Check if this is a triangle.
+     (אי שוויון המשולש: סכום של כל שתי
+     צלעות חייב להיות גדול יותר מהצלע השלישית)
+
+  b) Create new function checkTriangle():
+      so if this is a triangle indeed -
+      check if the triangle is isosceles, 
+      equilateral or 
+      right-angled (can be isoceles too) 
+      (right-angled check is optional)
+     
+    // לבדוק אם זה משולש שווה שוקיים isosceles
+    // או אם זה משולש שווה צלעות equilateral
+    // או אם זה משולש ישר זווית (אופציונלי)
+    // right-angle -
+    // זה בעייתי ב
+    // js
+    // במיוחד עבור מספרים לא שלמים

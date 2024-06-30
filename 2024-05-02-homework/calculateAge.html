@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calculateAge.css">
+    <title>Calculate Age</title>
+    <body>
+        <h1>Calculate Age</h1>
+        <label for="birthYear">Birth Year:</label>
+        <input type="number" id="birthYear" min="1900" max="2023" required>
+        <br>
+        <label for="birthMonth">Birth Month:</label>
+        <input type="number" id="birthMonth" min="1" max="12" required>
+        <br>
+        <label for="birthDay">Birth Day:</label>
+        <input type="number" id="birthDay" min="1" max="31" required>
+        <br>
+        <button onclick="calculateAge()">Submit</button>
+        <div id="result"></div>
+    
+        <script src="./js/calculateAge.js"></script>
+            
+        </script>
+    </body>

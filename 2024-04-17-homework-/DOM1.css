@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+/* NEW!!! NEW!!!!
+
+div.purple - div with class "purple" (no space!!!)
+div#beautiful - div with id "beautiful"
+
+*/
+
+div.purple, div.dodgerblue, div.yellow {
+    width: 300px;
+    height: 200px;
+}
+
+#child {
+    width: 100px;
+    height: 60px;
+}
+
+/* .container div - all the div descendants of .container - כל הצאצצאים ה"דיבים" */
+.container div {
+    border: 1px solid green;
+}
+
+/* .container > div - all the div children of .container */
+.container > div {
+    border: 3px solid orange;
+}
+
+.purple {
+    background: purple;
+}
+
+.dodgerblue {
+    background: dodgerblue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+button {
+    font-size: 2rem;
+    padding: 0.7rem;
+    cursor: pointer;    
+}
+
+.turquoise {
+    width: 300px;
+    height: 200px;
+    background: turquoise;
+    border: 3px solid orange;
+}
+
+.red {
+    width: 300px;
+    height: 200px;
+    background: red;
+    border: 3px solid orange;
+    margin-left: 2rem;
+}
+
+

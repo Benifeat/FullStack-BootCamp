@@ -1,0 +1,100 @@
+body {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.first, .second, .third {
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third {
+    font-size: 3rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.purple {
+    background: purple;
+    color: white;
+}
+
+.orange {
+    background: orangered;
+    color: lightskyblue;
+}
+
+.invisible {
+    display: none;
+}
+.streetlight {
+   
+
+     width: 300px;
+    height: 175px;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.standing::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f183"; /* standing person icon */
+    font-size: 2em;
+}
+
+.walking::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f554"; /* walking person icon */
+    font-size: 2em;
+    animation: walk 0.5s infinite alternate;
+}
+
+@keyframes walk {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.maintenance::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f7d9"; /* wrench icon */
+    font-size: 2em;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

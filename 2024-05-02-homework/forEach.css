@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(109, 109, 174) 35%, rgb(56, 178, 203) 100%);
+}
+pre {
+    text-align: left;
+    display: inline-block;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
