@@ -1,0 +1,37 @@
+Number Systems Conversion
+
+a) 
+
+   B9 in hexadecimal
+   = (11 × 16^1) + (9 × 16^0)
+   = (11 × 16) + (9 × 1)
+   = 176 + 9
+   = 185 in decimal
+
+b) 
+
+   2AD64 in hexadecimal
+   = (2 × 16^4) + (10 × 16^3) + (13 × 16^2) + (6 × 16^1) + (4 × 16^0)
+   = (2 × 65536) + (10 × 4096) + (13 × 256) + (6 × 16) + (4 × 1)
+   = 131072 + 40960 + 3328 + 96 + 4
+   = 175460 in decimal
+
+c) 
+
+   7562 in decimal
+   7562 ÷ 16 = 472 Remainder 10 (A in hexadecimal)
+   472 ÷ 16 = 29 Remainder 8
+   29 ÷ 16 = 1 Remainder 13 (D in hexadecimal)
+   1 ÷ 16 = 0 Remainder 1
+
+   Therefore, 7562 in hexadecimal is 1D8A
+
+d) 
+
+   18224 in decimal
+   18224 ÷ 16 = 1139 Remainder 0
+   1139 ÷ 16 = 71 Remainder 3
+   71 ÷ 16 = 4 Remainder 7
+   4 ÷ 16 = 0 Remainder 4
+
+   Therefore, 18224 in hexadecimal is 4730

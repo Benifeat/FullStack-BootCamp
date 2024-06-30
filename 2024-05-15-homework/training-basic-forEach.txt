@@ -1,0 +1,41 @@
+1. var cyclones = ['Ana','Bill','Claudette','Danny','Elsa','Fred','Grace','Henri','Ida','Julian','Kate','Larry','Mindy','Nicholas','Odette','Peter','Rose','Sam','Teresa','Victor','Wanda']
+
+   Use cycle 'forEach' to loop over the array and print the strings to the console.
+
+2. 
+var food = ['pizza','bread','butter','banana','humus','falafel']
+
+
+// MISSION: go with "forEach" loop over the array and show only the second
+//  letter of each food on the next line in a <div>
+
+3.
+var drink = [ 'water','milk','juice','beer','coffee','wine']
+
+// MISSION: create pairs of food and drink
+///   with the same index:
+/// pizza water
+///// bread milk
+//// butter juice
+
+4. 
+// MISSION: go over the array drink, exchange each drink
+// by it's index
+
+// after the loop show the array at the console
+
+5. Use loop FOR to find sum of numbers 
+   from 5 to 17
+
+6. Use loop FOR to to multiply all the numbers 
+   from 5 to 17
+
+7. let word = 'strawberry'
+
+Use loop FOR to show all the letters 
+from the end to the beginning
+of the word
+
+8. let num = [4.5, 6, 7.1, 44]
+
+Go over the array and sum all the numbers

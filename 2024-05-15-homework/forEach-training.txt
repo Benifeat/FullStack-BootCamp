@@ -1,0 +1,80 @@
+1. const cyclones = ['Anna','Bill','Claudette','Danny','Elsa','Fred','Grace','Henri','Ida','Julian','Kate','Larry','Mindy','Nicholas','Odette','Peter','Rose','Sam','Teresa','Victor','Wanda']
+
+   Use loop 'forEach' to loop over the array and print the strings to the console.
+
+2. Go with "forEach" loop over the array "cyclones" and show only the second
+    letter of each food on the next line
+
+3. Show cyclone with it's index:
+
+   // '0. Anna'
+   // '1. Bill'
+   // '2. Claudette'
+
+   Make string out of these pairs:
+
+   '0. Anna, 1. Bill, 2. Claudette ...'
+
+4. const adjectives = ['strong','furious','beautiful','dangerous','mighty','cool','strong','furious','beautiful','dangerous','mighty','cool','strong','furious','beautiful','dangerous','mighty','cool','strong','furious','beautiful','dangerous','mighty','cool']
+
+// Create pairs of adjective and cyclone
+///   with the same index:
+/// 'strong Anna'
+///// 'furious Bill'
+//// 'beautiful Claudette'
+
+5. Go over the array "adjectives" and show 
+   only the second letter of the adjectives
+
+6. Go over the array 'adjectives' and create 
+  new array - only from the words 'strong' and 'furious'
+  
+    It should look now like:
+
+    ['strong', 'furious','strong', 'furious','strong', 'furious','strong', 'furious']
+
+7. num2 = [1.2, 4.45, 8, 111.03]
+
+   Go over the array num2 and subtract 3 from the numbers.
+
+   Now num2 should look:
+
+   [-1.8, 1.45, 5, 108.03]
+
+8. Go over the array num2 (as it is after
+   the exercise 7) and round it's numbers.
+
+   Now num2 should look:
+
+   [-2, 1, 5, 108]
+
+9. Go over the array num2 and sum all it's numbers.
+
+   The result should be: 112
+
+10. Go over the array num2 and multiply all it's numbers
+
+   The result should be -1080
+
+11. Go over the array num2 and create new array "positive",
+    which will contain only the numbers greater
+    than 0
+
+    "positive" should be [1, 5, 108]
+
+12. Go over the array "cyclones" and create new array
+    "vowels" wich will contain only the names of the
+    cyclones, starting with 'A','E','I','O','U'
+
+    "vowels" should be ['Anna','Elsa','Ida','Odette']
+
+13. Go over the array "cyclones" and change each of it's members
+    to the first letter of the member.
+
+    The array "cyclones" should be now: ['A','B','C','D', ...]
+
+14. Go over the array "adjectives" and change each of it's members
+    to upper case. 
+
+    The array "adjectives" should be now:
+    ['STRONG','FURIOUS','BEAUTIFUL','DANGEROUS' ....]

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background : cornflowerblue;
+            padding: 1rem;
+            margin: 1rem;
+            max-width: 19rem;
+            border-radius: 10px;
+        }
+        .red-container {
+            background : red;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 0.5rem;
+        }
+        .btn {
+            font-size: 2rem;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        .btn:disabled {
+
+            background-color: cornflowerblue;
+            
+        }
+        .out {
+            background: salmon;
+            padding: 1rem;
+            font-size: 2rem;
+            min-height: 4rem;
+            margin: 2rem;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red-container">
+
+            <button class="btn a">A</button>
+            <button class="btn b">B</button>
+            <button class="btn c">C</button>
+            <button class="btn d">D</button>
+            <button class="e btn">E</button>
+        </div>
+        <div class="out"></div>
+
+    </div>
+    <script src="./js/event-target.js"></script>
+</body>
+</html>
