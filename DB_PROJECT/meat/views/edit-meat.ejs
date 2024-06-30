@@ -1,0 +1,121 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+
+    <% if (message) { %>
+
+        <p class="text-center text-danger"><%= message %></p>
+
+    <% } %>
+
+    <% if (meat) { %>
+
+        <form class="edit-meat-form" action="" method="post" enctype="multipart/form-data">
+
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+
+                    <label for="name">Name</label>
+
+                    <input type="text" class="form-control" name="name" id="name" value="<%= meat.name %>" required>
+
+                </div>
+
+                <div class="form-group col-md-6">
+
+                    <label for="country">Country</label>
+
+                    <select id="country" name="country_id" class="form-control" required>
+
+                        <option value="">Select Country</option>
+
+                        <!-- Add options for each country -->
+
+                        <% countries.forEach(function(country) { %>
+
+                            <option value="<%= country.id %>" <%= meat.country_name === country.id ? 'selected' : '' %>><%= country.name %></option>
+
+                        <% }); %>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+
+                    <label for="meat-type">Meat Type</label>
+
+                    <select id="meat-type" name="meat_type" class="form-control" required>
+
+                        <option value="">Select Meat Type</option>
+
+                        <option value="BEEF" <%= meat.meat_type === 'BEEF' ? 'selected' : '' %>>Beef</option>
+
+                        <option value="PORK" <%= meat.meat_type === 'PORK' ? 'selected' : '' %>>Pork</option>
+
+                        <option value="CHICKEN" <%= meat.meat_type === 'CHICKEN' ? 'selected' : '' %>>Chicken</option>
+
+                        <option value="LAMB" <%= meat.meat_type === 'LAMB' ? 'selected' : '' %>>Lamb</option>
+
+                        <option value="FISH" <%= meat.meat_type === 'FISH' ? 'selected' : '' %>>Fish</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group col-md-6">
+
+                    <label for="calories">Calories per 100g</label>
+
+                    <input type="number" class="form-control" name="calories_per_100g" id="calories" value="<%= meat.calories_per_100g %>" required>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="description">Description</label>
+
+                <textarea class="form-control" name="description" id="description" rows="4" required><%= meat.description %></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="image">Image</label>
+
+                <input type="file" class="form-control-file" name="image" id="image">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="cooking-time">Cooking Time (in minutes)</label>
+
+                <input type="number" class="form-control" name="cooking_time_min" id="cooking-time" value="<%= meat.cooking_time_min %>" required>
+
+            </div>
+
+            <button type="submit" class="btn btn-success float-right">Update Meat</button>
+
+        </form>
+
+    <% } else { %>
+
+        <p class="text-center">Meat Not Found. Go <a href="<%= hostingDir %>/add">here</a> to add meats.</p>
+
+    <% } %>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
