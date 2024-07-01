@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/svg/icon.svg" type="image/svg+xml">
+    <script type="module" src="src/script.js" defer></script>
+</head>
+
+<body>
+    <div class="additional-background"></div>
+    <div class="spotlight"></div>
+    <div class="clouds"></div>
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+    <div class="lives-count"></div>
+    <div class="readme">
+        <p>
+            Project By:
+            <span>Or & Beni & Michael</span>
+        </p>
+    </div>
+    <button class="start-game">New Game</button>
+    <div id="container">
+        <div class="stage">
+            <span class="hangman-text">hang man</span>
+            <object type="image/svg+xml" data="assets/svg/scenes/stage-start-static.svg">
+                Your browser does not support SVGs
+            </object>
+        </div>
+        <div class="crowd">
+            <img src="assets/svg/crowd/crowd-person-1.svg" alt="crowd">
+            <img src="assets/svg/crowd/crowd-person-2.svg" alt="crowd">
+            <img src="assets/svg/crowd/crowd-person-3.svg" alt="crowd">
+            <img src="assets/svg/crowd/crowd-person-4.svg" alt="crowd">
+        </div>
+    </div>
+    <div class="player-interaction">
+        <div class="bubble-bottom">
+            <p></p>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <div class="key-letter">Q</div>
+                <div class="key-letter">W</div>
+                <div class="key-letter">E</div>
+                <div class="key-letter">R</div>
+                <div class="key-letter">T</div>
+                <div class="key-letter">Y</div>
+                <div class="key-letter">U</div>
+                <div class="key-letter">I</div>
+                <div class="key-letter">O</div>
+                <div class="key-letter">P</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key-letter">A</div>
+                <div class="key-letter">S</div>
+                <div class="key-letter">D</div>
+                <div class="key-letter">F</div>
+                <div class="key-letter">G</div>
+                <div class="key-letter">H</div>
+                <div class="key-letter">J</div>
+                <div class="key-letter">K</div>
+                <div class="key-letter">L</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key-letter">Z</div>
+                <div class="key-letter">X</div>
+                <div class="key-letter">C</div>
+                <div class="key-letter">V</div>
+                <div class="key-letter">B</div>
+                <div class="key-letter">N</div>
+                <div class="key-letter">M</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

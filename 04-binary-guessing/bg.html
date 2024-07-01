@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bg.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="root">
+      <h1>Binary Guessing</h1>
+      <h2>By: Beni and Ivgeny</h2>
+      <h3>Mode 1: User Guesses</h3>
+      <p>Rules: Machine is going to think about a number from 1 to 100</p>
+      <p>
+        You should guess it. Try to guess it! With less then 8 try's you win!
+      </p>
+      <p>Don't worry, copmuter will help you! to guess the number.</p>
+      <h3>Mode 2: Pc Guesses</h3>
+      <p>Rules: You are going to think about a number from 1 to 100</p>
+      <p>And the computer will guess it.</p>
+      <h3>Mode 3: Local Co-op</h3>
+      <p>Rules: First player are going to think about a number from 1 to 100</p>
+      <p>And second player have to guess it</p>
+      <div class="buttons buttons-mode1">
+        <button class="btn btn-mode1">Mode1</button>
+        <button class="btn btn-mode2">Mode2</button>
+        <button class="btn btn-mode3">Mode3</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Game Container -->
+    <!-- mode 1 -->
+    <div class="container mode1" id="mode1">
+      <h2>Mode 1</h2>
+      <p>Rules: Machine is going to think about a "X" number from 1 to 100</p>
+      <p>And you should guess it! With less then 8 try's you win!</p>
+      <h2>If you win, you will see the "X" number down here:</h2>
+      <div class="guesscontainer">
+        <span class="numberis">???</span>
+      </div>
+      <div class="score">
+        <p>Number of Steps:<span class="scoreis"></span></p>
+      </div>
+      <div class="input">
+        <input type="number" class="inputvalue" />
+      </div>
+      <div class="output">
+        <p>Your current step: <span class="outputvalue"></span></p>
+        <p>Your steps:<span class="steps"></span></p>
+        <p>Try's left:<span class="trysLeft"></span></p>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-start">🆕Start Game🆕</button>
+        <button class="btn btn-check">🔎Check🔎</button>
+        <button class="btn btn-reset">🔃Reset🔃</button>
+        <button class="btn btn-exit">🚪Exit🚪</button>
+      </div>
+    </div>
+
+    <!-- mode 2 -->
+    <div class="container mode2" id="mode2">
+      <h2>Mode 2</h2>
+      <h2>
+        think of a number between 1 to 100 
+      </h2>
+      <h3>Rules:</h3>
+      <ol>
+        <li>You have to think about a number between 1 to 100</li>
+        <li>If PC guess higher press "Lower"</li>
+        <li>If PC guess lower press "Higher"</li>
+        <li>If PC guess correct press "Correct"</li>
+        <li>If PC cant guess a number by 8 steps, you WIN!</li>
+        <li>👿DONT BE A CHEATER!!! pls😇</li>
+      </ol>
+       
+      <h2>
+          The computer Guess, is down here.
+      </h2>
+      <div class="guesscontainer-mode2">
+        <span class="pcGuesses"></span>
+        <br>
+        <span class="winText"></span>
+      </div>
+      <div class="Outputs">
+        <p>Trys of PC:<span class="countOfTrys"></span></p>
+      </div>
+      
+      <div class="output output-mode2"></div>
+      <div class="buttons buttons-mode2">
+        <button class="btn btn-higher">🔼Higher🔼</button>
+        <button class="btn btn-lower">🔻Lower🔻</button>
+        <button class="btn btn-correct">✅Correct✅</button>
+        <button class="btn btn-exit-mode2">🚪Exit🚪</button>
+        <button class="btn btn-reset2">🆕New Game🆕</button>
+      </div>
+
+    <!-- mode 3 -->
+    <!-- <div class="container mode3" id="mode3">
+      <h2>If you win, you will see the number down hare:</h2>
+      <div class="guesscontainer">
+        <span class="numberis"></span>
+      </div>
+      <div class="score">
+        <span class="scoreis"></span>
+      </div>
+      <div class="input">
+        <input type="number" class="inputvalue" />
+      </div>
+      <div class="output">
+        <p>Your last guess: <span class="outputvalue"></span></p>
+        <p>Your max value:<span class="maxvalue"></span></p>
+        <p>Your min value:<span class="minvalue"></span></p>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-start">Start Game</button>
+        <button class="btn btn-check">Check</button>
+        <button class="btn btn-reset">Reset</button>
+        <button class="btn btn-exit"><a href="#root">Exit</a></button>
+      </div>
+    </div> -->
+
+    <script src="./bg.js"></script>
+  </body>
+</html>

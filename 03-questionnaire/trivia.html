@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="trivia.css">
+</head>
+<body>
+    <div class="game-window">
+        <h1>Choose a Category</h1>
+        <div class="category-buttons">
+            <button class="category-btn" data-category="animals">Animals</button>
+            <button class="category-btn" data-category="math">Math</button>
+            <button class="category-btn" data-category="food">Food</button>
+        </div>
+
+        <div class="question-container" style="display: none;">
+            <h2 class="category-name"></h2>
+            <h2 class="question-text"></h2>
+            <div class="answer-options"></div>
+            <div class="timer-container">
+                <div class="timer-bar"></div>
+            </div>
+            <div class="controls">
+                <button class="skip-btn">Skip Question</button>
+                <button class="stop-btn">Stop Game</button>
+            </div>
+            <div class="score-display"></div>
+        </div>
+    </div>
+
+    <script src="trivia.js"></script>
+</body>
+</html>

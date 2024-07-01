@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nim Game</title>
+  <link rel="stylesheet" type="text/css" href="nim.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-container">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+  </div>
+  <div id="game-container">
+    <h1>Nim Game</h1>
+    <div id="mode-selection">
+      <h2>Select Game Mode</h2>
+      <p> <span id="stick-count"></span> Choose the number of sticks. Pick wisely!</p>
+      <label for="num-sticks">Number of Sticks:</label>
+      <input type="number" id="num-sticks" min="10" max="500" value="100">
+      <button id="rules-button" class="action-button">Rules</button>
+      <br>
+      <button id="player-vs-player" class="mode-button">Player vs Player</button>
+      <button id="player-vs-pc" class="mode-button">Player vs PC</button>
+    </div>
+    <div id="rules-popup" class="hidden">
+      <div class="popup-content">
+        <h3>Rules:</h3>
+        <ul>
+          <li>Players take turns choosing the number of sticks to remove from the pile.</li>
+          <li>On each turn, a player can choose to remove 1-9 sticks.</li>
+          <li>The player who takes the last stick from the pile wins the game.</li>
+        </ul>
+        <button id="close-rules" class="action-button">Close</button>
+      </div>
+    </div>
+    <div id="game-screen" class="hidden">
+      <div id="player-turn"></div>
+      <div id="error-message"></div>
+      <div id="game-board"></div>
+      <div id="game-controls">
+        <input type="number" id="stick-input" min="1" max="9" placeholder="Enter number of sticks (1-9)">
+        <button id="take-sticks" class="action-button">Take Sticks</button>
+      </div>
+    </div>
+    <div id="winner-announcement" class="hidden">
+      <div class="sign">
+        <span id="winner-message"></span>
+      </div>
+      <div id="restart-timer"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Made by Beni & David</p>
+  </footer>
+  <script src="nim.js"></script>
+</body>
+</html>
