@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(109, 109, 174) 35%, rgb(56, 178, 203) 100%);
+}
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+#result1, #result2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}

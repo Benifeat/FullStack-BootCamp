@@ -1,0 +1,195 @@
+0. Projects
+   00-portfolio - get some ideas, what do you want 
+   00-tic-tac-toe - 30.04.2024
+   01-is-it-a-prime-number - 30.04.2024
+   02-css-explanator - 30.04.2024
+
+1. Ternary operator drill 🫢.
+
+   a) Your program asks what the user has decided (Y/N).
+
+      Use variable "action" and ternary operator. 
+      If the decision is 'Y', fill the variable "action" with the value
+      "do it", otherwise - with the value "don't do it"
+
+   b) Ask the user "Do you have a clean T-shirt?"
+      If the answer is "Yes" alert "Wear it", otherwise -
+      "Go do laundry"
+
+   c) Do validation with a ternary operator,
+      we agree to get only Yes or No.
+
+      Ask "What is your answer?"
+      If the answer "Yes" or "No" fill in a variable the value
+      "valid answer", otherwise - "invalid answer"
+
+   d) Add to Task c toLowerCase() or toUpperCase() to get 
+      yes/YES/Yes/no/NO/No (any case) - as valid answers.
+
+   e) Even-odd. Ask for a number. If it is dividible by 2,
+     write that it is even. If not - write that it is odd.
+
+   f) Color and taste. Ask to enter color (red,green,blue)
+      or taste (sweet, sour).
+      If the answer contains one of these options, say 
+      "good choice", if not, say "no such option"
+
+2. Ternary operator + DOM practice.
+
+   Use some INPUT fields and DIVs for your reaction.
+
+   a) var adminPassword = 'Rxjel$#1hs';
+      var admin1 = "Yosi", admin2 = "Noa", admin3 = "Yael"
+
+      Ask the user their username and
+      ask to enter a password.
+
+      If the username is equal to one of the admin's names 
+      and if the password is equal to adminPassword, 
+      show message "You're redirected to the admin area"
+
+      If it is wrong, alert "Access denied"
+
+   b) Ask the user to enter a word in upper case.
+      Say if it is OK, or not in upper case.
+
+      Hint to how to make this check see below all the exercises. 
+
+   c) The program gets 3 numbers. It is given that none of them
+      is zero. Use ternary operator to decide
+      (without multiplying them!!!) if their product (произведение) 
+      will be positive or negative
+
+3. Aspect ratio - הערך המשולש. 
+
+   Use aspect-ratio files.
+   a) Add listeners to all the 4 inputs
+   b) If ratio-width is changed, the width should change to keep 
+      the same ratio width
+
+      For example: 
+         ratio-width was 16, ratio-height was 9
+         width was 1280, height was 720
+
+         let's say, ratio-width is changed to 10
+         width should change to 720/9*10 (height / ratio-height * ratio-width)
+    
+   c) if ratio-height is changed, it affects height 
+   d) If the width is changed, the ratio is the same, but the height shoud change
+   e) If the height is changed, the ratio is the same, 
+      but the width shoud change too
+   f) When aspect ratio change happens - cause the "container" 
+      to change it's dimensions in accordance with 
+      the new aspect ratio
+
+4. DOM + loops
+
+   a) Create INPUT and DIV.
+      When the number is changed  in INPUT,
+      in the DIV should appear 
+      the sum of all the numbers from 1 to the given number.
+    
+      Solve it with the event "change",
+      or with the event "input"
+
+   b) Create INPUT and DIV.
+      When the number is changed  in INPUT,
+      in the DIV should appear 
+      the product - multiplication
+       of all the numbers from 1 to the given number.
+    
+      If the product is negative, DIV should be colored PINK,
+      if not, DIV should be colored LIMEGREEN.
+
+      Solve it with the event "change",
+      or with the event "input"
+
+   c) Create INPUT1, INPUT2 and DIV.
+      When the number is changed  in INPUT,
+      in the DIV should appear 
+      the list of all the numbers from the first number 
+      to the second number
+      with SPACEs between them.
+
+      If the first number is less than the second, 
+      DIV should be colored VIOLET,
+      if not, DIV should be colored YELLOW.
+    
+      Solve it with the event "change",
+      or with the event "input"
+
+   d) Create INPUT1, INPUT2, INPUT3 and DIV.
+      When the number is changed  in INPUT,
+      in the DIV should appear 
+      the list of all the numbers from the first number 
+      to the second number with JUMPs over the number 
+      of places according to the third number,
+      with COMMAs between them.
+
+      If the first number is less than the second, 
+      DIV should be colored VIOLET,
+      if not, DIV should be colored YELLOW.
+    
+      Solve it with the event "change",
+      or with the event "input"
+
+5. Use file objects.js.
+
+   a) Choose two students. Add to the first of them inside it's definition
+      and to the second outside of it's definitions method named getInitials().
+      It should create new property "initials" and show it.
+      "initials" - are the first letters of the name and family name with dots
+      and in uppercase,
+      for example, for Michael Jackson it's 'M.J.'.
+      Use these methods.
+
+   b) Create array of all the students:
+
+      const students = [student1, student2, student3, student4]
+
+      Go over this array with function "filter" and create new array 
+      jStudents that will contain only the students that their name
+      starts with 'j';
+
+   c) We can address a property not only by dot . and property name,
+      but also by square brackets with property name. 
+
+      console.log(student4.firstName) is the same as
+      console.log(student4['firstName']).
+
+      Pay attention, that property name is a string.
+
+      Show the grades of student4, using square brackets.
+
+   d) Square brackets notation could be used with a variable. 
+      For example, 
+      let someProperty = 'grades';
+      console.log(student5[someProperty])
+
+      let someOtherProperty = 'lastName';
+      Go over "students", create a new array of someOtherProperty.
+
+   e) Choose a student and add him a property birthDate and
+      a function calcAge which calculates the student's age and
+      puts it into new property "age"
+
+6. Add to hamburger.html:
+
+<h1>Pizza Order</h1>
+
+    <h3>
+        I'd like to order 
+        <input type="number" id="num" placeholder="1"> hamburgers
+        for <input type="number" id="persons" placeholder="2"> persons.<br>
+        Without glutene? <input type="checkbox" id="glutene">
+    </h3>
+
+    <div class="out hamburger-order">
+        We've got your order for <span id="per-person"></span> 
+        hamburgers <span id="with-glutene"></span> glutene per person.
+    </div>
+<br><br>
+    <button class="click">Click Me</button>
+
+
+Use events and checks for to get the order that makes sense.

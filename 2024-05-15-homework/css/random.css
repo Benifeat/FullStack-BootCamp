@@ -1,0 +1,61 @@
+body {
+    /** r-red, g-green, b-blue*/
+    background: #450000;
+    background: #220000;
+    background: #990000;
+    background: #FF0000;
+    background: #005500;
+    background: #00A900;
+    background: #000088;
+    background: #0000FF;
+    background: #6666FF;
+    background: #6600FF;
+    background: #660066;
+    background: #006666;
+    background: #00AAAA;
+    background: #AAAA00;
+    background: #FFAA00;
+    background: #FFFFFF;
+    background: #000000;
+    background: #777777;
+    background: #FFAA00;
+    /*shorthand - כשבכל זוג יש ספרות זהות*/
+    background: #FA0;
+    /* in total: 256x256x256 colors */
+    background: rgb(255,170,0);
+    /* in rgba() function the fourth
+    parameter is transparency and 
+    it's range is from 0 (transparent)
+    to 1 (not transparent) */
+    background: rgba(255,170,0,1);
+    background: rgba(255,170,0,0.3);
+}
+
+figure {
+    border: 2px solid salmon;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.2rem 1.2rem 1.2rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+figure > h3 {
+    margin: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+figure > div {
+    min-height: 2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+figure > button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+

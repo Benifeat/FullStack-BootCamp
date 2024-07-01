@@ -1,0 +1,24 @@
+1. Download NodeJS and install Next->Next->Next
+   
+   Odd number of main version number -> newest, but with bugs
+   Even number - stable version, use for production
+
+
+2. Download Git - for get Git Bash together 
+    with it
+
+3. Open terminal in VS Code or 
+   Git Bash separate Window and 
+    check that you've got NodeJS 
+    installed and it's version
+
+$ node -v
+v18.20.0
+
+4. create a program, for example, hello.js,
+get to it's directory and run it:
+
+$ cd nodejs
+$ node hello.js
+
+

@@ -1,0 +1,16 @@
+FORTUNE WHEEL - FIRST MISSION (of 2)
+
+1. Take the start html and css files.
+
+2. Add listener on click on the "spin" button 
+   that enlarges number of degrees in 
+   container.style.transform = "rotate( ... deg)"
+
+3. Make the spins not too short
+
+4. Add button "Renew the Wheel". Each time, that the button
+   is pressed - some random statements from "responses" array
+   should be shown in the sectors of the wheel
+
+5. Add some music that starts when the spinning starts
+   and ends on "transitionend" event

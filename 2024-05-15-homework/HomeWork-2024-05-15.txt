@@ -1,0 +1,56 @@
+CHALLENGEs are OPTIONAL
+
+00. Create directory panda/your_name/hw/hw-2024-05-15
+00. Create directory panda/your_name/projects/05-string-games etc.
+
+0. Projects
+   00-portfolio - get some ideas, what do you want 
+   00-tic-tac-toe - 30.04.2024
+   01-is-it-a-prime-number - 30.04.2024
+   02-css-explanator - 30.04.2024
+   03-questionnaire - 8.05.2024
+   04-binary-guessing - 16.05.2024
+   05-string-games - "fix the clock" and "random quote" parts - 16.05.2024
+
+   Optional Projects:
+      - Canvas "Breakout Game"
+      - "Endless Dangers" - see the description below
+
+
+1. NodeJS http server: add one more part to the router in server.js
+
+2. Random from array. 
+   const riddles = ['Who crossed the road?',
+        'What happens once in a year, twice in a week and never in a month?',
+        'What gets more wet as it dries?',
+        'What is at the end of the rainbow?',
+        'Which 4-letter word can be written forward, backward, upside-down and still be read from left to right?',
+        'Which invention let you look through the wall?',
+        'Which English letter has most water?']
+   const answers = ['chicken','e','towel','w','NOON','window','c']
+
+   Create 2 buttons: "Show riddle" and "Check answer".
+
+   On click on the first button, get random riddle and show it.
+
+   On click on the second button check that the input is the right
+   answer (with the same index in the array "answers).
+
+3. Number systems.
+   There are examples of using the algorithm at 
+   notes/hexadecimal.txt
+   
+   To submit, you could just show the process on the paper
+   and make a photo (or, if you prefer, to write it on an HTML page).
+
+   a) Convert B9 from hexadecimal to decimal
+   b) Convert 2AD64 from hexadecimal to decimal
+
+   c) Convert 7562 from decimal to hexadecimal
+   d) Convert 18224 from decimal to hexadecimal
+
+4. 05-string-games - "fix the clock" and "random quote" parts        
+
+5. Get test-example01 from test dir and prepare yourself 
+   to the test.
+

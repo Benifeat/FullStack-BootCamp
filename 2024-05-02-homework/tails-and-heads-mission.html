@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;1,100&family=Fruktur&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <title>Tails and Heads</title>
+    <style>
+        body {
+            font-family: 'Fruktur', cursive;
+            text-align: center;
+            margin-top: 50px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(109, 109, 174) 35%, rgb(56, 178, 203) 100%);
+        }
+        input {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+        h2, h3 {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- MISSION -->
+    <!-- After the user enters how many times the coin should be flipped,
+    function randomly creates the specified amount of zeroes and ones 
+    (heads and tails of a coin) and counts them -->
+    <!-- Each time when there is no value or the value is 0 there should be ? in the spans -->
+    
+    
+    <h2>Checking if heads are dropped with the probability of 50%</h2>
+    <label for='num'>How many times we flip a coin? </label>
+    <input type="number" id="num" min="1" required>
+    <h3 id='answer'>Heads: 
+        <span id='heads'>?</span> times, tails: 
+        <span id='tails'>?</span> times
+    </h3>
+
+    <script>
+        function flipCoin() {
+            return Math.round(Math.random()); // 0 for tails, 1 for heads
+        }
+
+        function getStats() {
+            let cntTails = 0; // Count tails
+            let cntHeads = 0; // Count heads
+
+            const numOfFlips = parseInt(document.getElementById('num').value);
+
+            if (!isNaN(numOfFlips) && numOfFlips > 0) {
+                for (let i = 0; i < numOfFlips; i++) {
+                    const flip = flipCoin();
+                    if (flip === 0) {
+                        cntTails++;
+                    } else {
+                        cntHeads++;
+                    }
+                }
+            }
+
+            document.getElementById('heads').textContent = cntHeads || '?';
+            document.getElementById('tails').textContent = cntTails || '?';
+        }
+
+        document.getElementById('num').addEventListener('input', getStats);
+    </script>
+</body>
+</html>
