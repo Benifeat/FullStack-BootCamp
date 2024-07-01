@@ -1,5 +1,5 @@
 # Bootcamp Experience
-# #Background
+## Background
 
 Before starting the bootcamp, I had experience with various programming languages including C, Java, and C#. With this solid foundation, I decided to dive into the world of full-stack development. Despite being familiar with programming concepts, I had not yet explored JavaScript and web technologies like HTML and CSS.
 
